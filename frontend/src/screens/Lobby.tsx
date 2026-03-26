@@ -8,7 +8,7 @@ interface Props {
   onMatchFound: (matchId: string, initialState: GameState) => void;
 }
 
-export default function Lobby({ userId, username, onMatchFound }: Props) {
+export default function Lobby({ userId: _userId, username, onMatchFound }: Props) {
   const [mode, setMode] = useState<"classic" | "timed">("classic");
   const [searching, setSearching] = useState(false);
   const [elapsed, setElapsed] = useState(0);

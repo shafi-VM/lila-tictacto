@@ -22,7 +22,7 @@ export default function Result({ userId, finalState, onPlayAgain }: Props) {
     async function fetchLeaderboard() {
       try {
         const session = getSession();
-        const result = await client.rpc(session, "get_leaderboard", "");
+        const result = await client.rpc(session, "get_leaderboard", {});
         const payload = typeof result.payload === "string"
           ? JSON.parse(result.payload)
           : result.payload;
