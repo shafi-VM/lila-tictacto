@@ -22,4 +22,4 @@ COPY --from=builder /backend/backend.so /nakama/data/modules/backend.so
 COPY start.sh /nakama/start.sh
 RUN chmod +x /nakama/start.sh
 
-CMD ["/nakama/start.sh"]
+ENTRYPOINT ["/nakama/start.sh"]
