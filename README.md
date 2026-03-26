@@ -3,6 +3,7 @@
 A production-ready multiplayer Tic-Tac-Toe game built with [Nakama](https://heroiclabs.com/) as a server-authoritative backend and React + TypeScript on the frontend.
 
 **Live demo:** [lila-tictacto.vercel.app](https://lila-tictacto.vercel.app)
+**Nakama server:** [lila-tictacto-production.up.railway.app](https://lila-tictacto-production.up.railway.app)
 
 ---
 
